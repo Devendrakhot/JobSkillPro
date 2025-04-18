@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#08406e] to-[#fb8200];
+}
+
+.card-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%);
+}
+
+.hero-gradient {
+  background: linear-gradient(rgba(8, 64, 110, 0.8), rgba(251, 130, 0, 0.8));
+}
+
+.glass-effect {
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.feature-card-hover {
+  transition: all 0.3s ease;
+}
+
+.feature-card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(8, 64, 110, 0.1), 0 10px 10px -5px rgba(251, 130, 0, 0.04);
+}
+
+/* Career Journey Styles */
+.career-path {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.career-path::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #fb8200;
+  transform: translateX(-50%);
+}
+
+.career-step {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.career-step::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background: #fb8200;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.career-step::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background: rgba(251, 130, 0, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.career-content {
+  position: relative;
+  width: calc(50% - 30px);
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.career-content::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 3px;
+  background: #fb8200;
+}
+
+.career-step:nth-child(odd) .career-content {
+  margin-left: auto;
+}
+
+.career-step:nth-child(odd) .career-content::before {
+  left: -30px;
+}
+
+.career-step:nth-child(even) .career-content::before {
+  right: -30px;
+}
+
+.career-icon {
+  width: 60px;
+  height: 60px;
+  background: #fb8200;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+/* Curved Path Animation */
+.curved-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s ease-in-out forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Social Media Embeds */
+.instagram-embed,
+.linkedin-embed,
+.youtube-embed {
+  width: 100%;
+  background: #fafafa;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.instagram-media {
+  min-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.linkedin-embed iframe,
+.youtube-embed iframe {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* Custom Scrollbar Styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(8, 64, 110, 0.1);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #08406e, #fb8200);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #0a5087, #ff9a1a);
+}
+
+/* Chat Message Animations */
+.message-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.message-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.message-exit {
+  opacity: 1;
+}
+
+.message-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
