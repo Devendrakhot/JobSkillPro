@@ -71,17 +71,17 @@ const ReviewSlider = () => {
                 className="bg-white rounded-2xl shadow-xl p-8 h-full border border-gray-100"
               >
                 <div className="flex items-start mb-6">
-                  <div className="relative">
+                  {/* <div className="relative">
                     <img
                       src={review.image}
                       alt={review.name}
                       className="w-16 h-16 rounded-full object-cover ring-2 ring-offset-2 ring-blue-600"
                     />
                     <Quote className={`absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-r ${review.gradient} text-white rounded-full p-1`} />
-                  </div>
+                  </div> */}
                   <div className="ml-4">
                     <h3 className="text-xl font-bold text-gray-800">{review.name}</h3>
-                    <p className="text-gray-600">{review.role}</p>
+                    {/* <p className="text-gray-600">{review.role}</p> */}
                   </div>
                 </div>
                 <p className="text-gray-600 mb-6 leading-relaxed">{review.content}</p>

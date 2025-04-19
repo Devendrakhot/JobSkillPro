@@ -21,20 +21,20 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ review, featured = false }) => 
     >
       <div className="p-8">
         <div className="flex items-start space-x-4">
-          <div className="relative">
+          {/* <div className="relative">
             <img
               src={review.image}
               alt={review.name}
               className="w-16 h-16 rounded-full object-cover ring-2 ring-offset-2 ring-[#fb8200]"
             />
             <Quote className="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-r from-[#08406e] to-[#fb8200] text-white rounded-full p-1" />
-          </div>
+          </div> */}
           <div className="flex-1">
             <div className="flex items-center justify-between">
               <div>
                 <h3 className="text-xl font-bold text-gray-900">{review.name}</h3>
-                <p className="text-gray-600">{review.role}</p>
-                <p className="text-[#fb8200] font-semibold">{review.company}</p>
+                {/* <p className="text-gray-600">{review.role}</p> */}
+                {/* <p className="text-[#fb8200] font-semibold">{review.company}</p> */}
               </div>
             </div>
           </div>
