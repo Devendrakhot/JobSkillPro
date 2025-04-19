@@ -25,12 +25,12 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <ul className="space-y-2">
               <li className="flex items-center space-x-2">
-                <MapPin className="w-5 h-5" />
-                <span className="text-gray-400">123 Education Street, City</span>
+                <MapPin className="w-10 h-10" />
+                <span className="text-gray-400">1St Floor, mathura niwas, Navghar Rd, opp. Shani Mandir, Bhayandar, Chandan nagar, Bhayandar East, Mira Bhayandar, Maharashtra 401105</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="w-5 h-5" />
-                <span className="text-gray-400">+91 1234567890</span>
+                <span className="text-gray-400">+91 9892879810</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-5 h-5" />
@@ -38,7 +38,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          {/* <div>
             <h4 className="text-lg font-semibold mb-4">Newsletter</h4>
             <form className="space-y-4">
               <input
@@ -50,7 +50,7 @@ const Footer = () => {
                 Subscribe
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400">© 2025 JSP All rights reserved.<b>Devloped by Devendra Khot</b></p>

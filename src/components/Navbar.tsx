@@ -51,7 +51,7 @@ const Navbar = () => {
     { name: 'Reviews', href: '/reviews' },
     { name: 'About Us', href: '/about' },
     { name: 'Contact Us', href: '/contact' },
-    { name: 'Placement', href: '#placement' },
+    // { name: 'Placement', href: '#placement' },
   ];
 
   return (

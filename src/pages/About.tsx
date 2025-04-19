@@ -87,55 +87,80 @@ const About = () => {
         </div>
       </section>
 
-      {/* Mission Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-4xl font-bold gradient-text mb-6">Our Mission</h2>
-              <p className="text-lg text-gray-600 mb-6">
-                At Job Skill Pro, we're committed to bridging the gap between education and industry requirements. Our mission is to empower individuals with the skills, knowledge, and confidence needed to excel in the tech industry.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <Target className="w-6 h-6 text-[#08406e]" />
-                  <span className="text-gray-700">Industry-aligned curriculum</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <GraduationCap className="w-6 h-6 text-[#08406e]" />
-                  <span className="text-gray-700">Hands-on learning approach</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Briefcase className="w-6 h-6 text-[#08406e]" />
-                  <span className="text-gray-700">Guaranteed job placement</span>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80"
-                alt="Our Mission"
-                className="rounded-lg shadow-xl"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-[#08406e]/10 to-[#fb8200]/10 rounded-lg" />
-            </motion.div>
+{/* Mission Section */}
+<section className="py-20 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-4">
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
+        <h2 className="text-4xl font-bold gradient-text mb-6">Our Mission</h2>
+        <div className="text-lg text-gray-600 space-y-4 mb-6">
+        Job Skills Pro
+Empowering Careers with In-Demand Skills
+
+At Job Skills Pro in Bhayander, we specialize in practical, job-focused training designed to prepare you for today’s competitive job market. From Accounting and Taxation to Full Stack Development, Digital Marketing, and Design, our diverse courses are led by industry professionals who bring real-world experience into the classroom.
+
+Our Mission
+To bridge the gap between education and employment by equipping individuals with the skills and confidence needed for successful careers.
+
+What Sets Us Apart
+
+Hands-On Courses: Covering Accounting, Tally, SAP FICO, Python, Graphic Design, and more.
+
+Expert Trainers: Learn from professionals with real industry experience.
+
+Career Support: Resume building, interview prep, and job placement assistance.
+
+Flexible Learning: Online/offline options with weekday and weekend batches.
+
+Recognized Certifications: Industry-validated credentials to boost your resume.
+
+Affordable Education: Quality training at competitive prices.
+
+Get Started Today!
+Whether you're starting out, upskilling, or switching careers, Job Skills Pro is here to support your journey to success.        </div>
+
+        <div className="space-y-4">
+          <div className="flex items-center space-x-3">
+            <Target className="w-6 h-6 text-[#08406e]" />
+            <span className="text-gray-700">Industry-aligned curriculum</span>
+          </div>
+          <div className="flex items-center space-x-3">
+            <GraduationCap className="w-6 h-6 text-[#08406e]" />
+            <span className="text-gray-700">Hands-on learning approach</span>
+          </div>
+          <div className="flex items-center space-x-3">
+            <Briefcase className="w-6 h-6 text-[#08406e]" />
+            <span className="text-gray-700">Guaranteed job placement</span>
           </div>
         </div>
-      </section>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="relative"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80"
+          alt="Our Mission"
+          className="rounded-lg shadow-xl"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#08406e]/10 to-[#fb8200]/10 rounded-lg" />
+      </motion.div>
+    </div>
+  </div>
+</section>
 
       {/* Team Section */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -178,7 +203,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

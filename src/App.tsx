@@ -38,7 +38,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/courses/naukri-pakki" element={<NaukriPakki />} />
           <Route path="/courses/python-ai" element={<FullStackPython />} />
-          <Route path="/courses/data-science" element={<DataScience />} />
+          <Route path="courses/data-science" element={<DataScience />} />
           <Route path="/courses/fullstack" element={<FullStackDevelopment />} />
           <Route path="/courses/sap" element={<SAPCourse />} />
           <Route path="/courses/software-programming" element={<SoftwareProgramming />} />

@@ -28,7 +28,7 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      details: ['+91 1234567890', '+91 9876543210'],
+      details: ['+91 9892879810', '+91 9372471869'],
       color: '#08406e'
     },
     {
@@ -40,13 +40,13 @@ const Contact = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Location',
-      details: ['123 Tech Park', 'Bangalore, Karnataka 560001'],
+      details: ['1St Floor, mathura niwas, Navghar Rd,', 'Bhayandar East'],
       color: '#08406e'
     },
     {
       icon: <Clock className="w-6 h-6" />,
-      title: 'Working Hours',
-      details: ['Monday - Saturday', '9:00 AM - 6:00 PM'],
+      title: 'Class Hours',
+      details: ['Monday - Saturday', '9:00 AM - 9:00 PM'],
       color: '#fb8200'
     }
   ];

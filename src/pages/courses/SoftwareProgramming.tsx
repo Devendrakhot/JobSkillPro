@@ -48,7 +48,7 @@ const programmingLanguages = [
         'Industry-standard projects'
       ],
       fee: '₹25,000',
-      nextBatch: '15th March 2024',
+      nextBatch: '15th March 2025',
       certification: 'Industry-recognized C programming certification'
     }
   },
@@ -89,7 +89,7 @@ const programmingLanguages = [
         'Performance optimization training'
       ],
       fee: '₹30,000',
-      nextBatch: '20th March 2024',
+      nextBatch: '20th March 2025',
       certification: 'Advanced C++ Developer Certification'
     }
   },
@@ -130,7 +130,7 @@ const programmingLanguages = [
         'Interview preparation'
       ],
       fee: '₹35,000',
-      nextBatch: '1st April 2024',
+      nextBatch: '1st April 2025',
       certification: 'Full Stack Java Developer Certification'
     }
   },
@@ -171,7 +171,7 @@ const programmingLanguages = [
         'Industry mentorship'
       ],
       fee: '₹28,000',
-      nextBatch: '10th April 2024',
+      nextBatch: '10th April 2025',
       certification: 'Python Developer Certification'
     }
   },
@@ -212,7 +212,7 @@ const programmingLanguages = [
         'Performance optimization'
       ],
       fee: '₹32,000',
-      nextBatch: '5th April 2024',
+      nextBatch: '5th April 2025',
       certification: 'Modern JavaScript Developer Certification'
     }
   },
@@ -253,7 +253,7 @@ const programmingLanguages = [
         'System design basics'
       ],
       fee: '₹40,000',
-      nextBatch: '25th March 2024',
+      nextBatch: '25th March 2025',
       certification: 'Advanced Algorithms Specialist Certification'
     }
   }
@@ -471,13 +471,13 @@ const SoftwareProgramming = () => {
                     </div>
                     <p className="text-gray-600">{selectedCourse.details.nextBatch}</p>
                   </div>
-                  <div className="bg-gray-50 p-4 rounded-lg">
+                  {/* <div className="bg-gray-50 p-4 rounded-lg">
                     <div className="flex items-center space-x-2 text-[#08406e] mb-2">
                       <DollarSign className="w-5 h-5" />
-                      <span className="font-semibold">Course Fee</span>
+                    
                     </div>
                     <p className="text-gray-600">{selectedCourse.details.fee}</p>
-                  </div>
+                  </div> */}
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <div className="flex items-center space-x-2 text-[#08406e] mb-2">
                       <GraduationCap className="w-5 h-5" />

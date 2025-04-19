@@ -46,7 +46,7 @@ const predefinedResponses = {
   fees: {
     text: "What specific information about fees would you like to know?",
     options: [
-      { text: "Course Fees", value: "coursefees" },
+      // { text: "Course Fees", value: "coursefees" },
       { text: "Payment Plans", value: "payment" },
       { text: "Scholarships", value: "scholarships" },
       { text: "EMI Options", value: "emi" }

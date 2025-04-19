@@ -7,6 +7,7 @@ import SocialProof from '../components/SocialProof';
 import ReviewSlider from '../components/ReviewSlider';
 import CompanySlider from '../components/CompanySlider';
 import FeatureCards from '../components/FeatureCards';
+import { Target } from 'lucide-react';
 
 function Home() {
   const courses = [
@@ -22,6 +23,7 @@ function Home() {
       description: 'Master Python programming with AI and machine learning integration',
       icon: 'python' as const,
       href: '/courses/python-ai',
+      Target:'blank_',
       image: '/images/two.webp'
     },
     {
@@ -37,35 +39,35 @@ function Home() {
       icon: 'data' as const,
       href: '/courses/data-science',
       image: '/images/four.webp'
-    },
-    {
-      title: 'Graphic Design',
-      description: 'Master visual communication with industry-standard design tools',
-      icon: 'design' as const,
-      href: '/courses/graphic-design',
-      image: '/images/five.webp'
-    },
-    {
-      title: 'Interior Design',
-      description: 'Learn space planning, materials selection, and 3D visualization',
-      icon: 'interior' as const,
-      href: '/courses/interior-design',
-      image: '/images/six.webp'
-    },
-    {
-      title: 'Digital Marketing',
-      description: 'Become expert in SEO, social media, and online advertising',
-      icon: 'marketing' as const,
-      href: '/courses/digital-marketing',
-      image: '/images/seven.webp'
-    },
-    {
-      title: 'Data Analysis',
-      description: 'Acquire skills in data processing, statistics, and business intelligence',
-      icon: 'analysis' as const,
-      href: '/courses/data-analysis',
-      image: '/images/eight.webp'
     }
+    // {
+    //   title: 'Graphic Design',
+    //   description: 'Master visual communication with industry-standard design tools',
+    //   icon: 'design' as const,
+    //   href: '/courses/graphic-design',
+    //   image: '/images/five.webp'
+    // },
+    // {
+    //   title: 'Interior Design',
+    //   description: 'Learn space planning, materials selection, and 3D visualization',
+    //   icon: 'interior' as const,
+    //   href: '/courses/interior-design',
+    //   image: '/images/six.webp'
+    // },
+    // {
+    //   title: 'Digital Marketing',
+    //   description: 'Become expert in SEO, social media, and online advertising',
+    //   icon: 'marketing' as const,
+    //   href: '/courses/digital-marketing',
+    //   image: '/images/seven.webp'
+    // },
+    // {
+    //   title: 'Data Analysis',
+    //   description: 'Acquire skills in data processing, statistics, and business intelligence',
+    //   icon: 'analysis' as const,
+    //   href: '/courses/data-analysis',
+    //   image: '/images/eight.webp'
+    // }
   ];
 
   return (
